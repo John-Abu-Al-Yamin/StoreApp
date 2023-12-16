@@ -1,0 +1,60 @@
+.virtual-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 5rem;
+}
+.left-virtual {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  position: relative;
+}
+.left-virtual > :nth-child(1) {
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: block;
+  width: 20rem;
+}
+.left-virtual > :nth-child(2) {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  display: block;
+  width: 20rem;
+}
+.left-virtual > :nth-child(3) {
+  font-weight: bold;
+  font-size: 1.6rem;
+}
+.left-virtual img {
+  position: absolute;
+  width: 10rem;
+  bottom: -2rem;
+}
+.rigth-virtual .virtual-wrapper {
+  width: 30rem;
+}
+
+@media screen and (max-width: 856px) {
+  .virtual-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+  }
+
+  .rigth-virtual .virtual-wrapper {
+    width: 24rem;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+    .rigth-virtual .virtual-wrapper {
+      width: 22rem;
+    }
+  }
