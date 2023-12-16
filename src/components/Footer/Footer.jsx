@@ -54,8 +54,8 @@ const Footer = () => {
             </li>
           </ul>
         </div>
-      </div>
       <h5>&copy;Coding With John-Abu-Al-Yamin</h5>
+      </div>
     </footer>
   );
 };
